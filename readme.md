@@ -73,6 +73,12 @@ Music is Music Streaming App that allows user to create music and share with the
 npm install express mongoose cors dotenv nodemon morgan jsonwebtoken bcrypt multer cloudinary
 ```
 
+- To install the dependencies, run the following command:
+
+```bash
+npm install nodemon morgan --save-dev
+```
+
 - Create a new file called '.env' and add the following environment variables:
 
 ```bash
