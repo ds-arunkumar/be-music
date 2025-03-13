@@ -5,6 +5,7 @@ const {
   logout,
   me,
 } = require("../controllers/authController");
+const { checkAuth } = require("../middlewares/auth");
 
 const authRouter = express.Router();
 
@@ -12,6 +13,6 @@ const authRouter = express.Router();
 authRouter.post("/register", register);
 authRouter.post("/login", login);
 authRouter.post("/logout", logout);
-authRouter.post("/me", me);
+authRouter.post("/me", checkAuth, me);
 
 module.exports = authRouter;
