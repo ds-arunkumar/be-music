@@ -11,7 +11,7 @@ const app = express();
 // enable cors
 app.use(
   cors({
-    origin: "https://exquisite-druid-103215.netlify.app/",
+    origin: "https://exquisite-druid-103215.netlify.app",
     credentials: true,
   })
 );
